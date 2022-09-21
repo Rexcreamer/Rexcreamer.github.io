@@ -1,0 +1,52 @@
+.portal-grid{
+    background-color: rgba(245, 255, 250, 0.696);
+}
+
+.top-header{
+    background-color: rgb(2, 2, 93);
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 5px 5px 5px lightblue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-name{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 2, 93);
+    gap: 25px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 5px 5px 5px lightblue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.para-lu{
+    color: rgb(2, 198, 2);
+    text-align: center;
+    font-size: 20px;
+}
+
+.para-copy{
+    color: white;
+    font-size: 30px;
+}
