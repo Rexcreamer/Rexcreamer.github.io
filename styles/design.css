@@ -48,7 +48,7 @@ a:visited{
 }
 
 a:hover{
-    color:rgba(255, 0, 0, 0.273)
+    color:rgba(255, 0, 0, 0.273);
 }
 
 a:active{
@@ -57,6 +57,9 @@ a:active{
 
 li, a{
     font-size: 20px;
+}
+
+li{
     color: white;
 }
 
@@ -113,7 +116,7 @@ h2{
 }
 
 main{
-    background-color: rgba(255, 255, 255, 0.778);
+    background-color: rgba(245, 255, 250, 0.696);
 }
 
 p{
