@@ -55,7 +55,7 @@ a:active{
     color:aqua;
 }
 
-a{
+li, a{
     font-size: 30px;
     color: white;
 }
