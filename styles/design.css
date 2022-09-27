@@ -11,6 +11,7 @@
     box-shadow: 5px 5px 5px lightblue;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .footer-bottom {
@@ -24,6 +25,7 @@
     box-shadow: 5px 5px 5px lightblue;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .para-lu{
@@ -51,6 +53,10 @@ a:hover{
 
 a:active{
     color:aqua;
+}
+
+a{
+    font-size: 30px;
 }
 
 .fir-link{
