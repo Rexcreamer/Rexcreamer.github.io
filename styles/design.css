@@ -1,0 +1,27 @@
+.header-top {
+    background-color: rgb(2, 2, 93);
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-self: auto;
+    align-items: center;
+    gap: 50px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 5px 5px 5px lightblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 2, 93);
+    gap: 25px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 5px 5px 5px lightblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
