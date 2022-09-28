@@ -40,11 +40,11 @@
 }
 
 a:link{
-    color:crimson;
+    color:white;
 }
 
 a:visited{
-    color:white;
+    color:crimson;
 }
 
 a:hover{
@@ -131,7 +131,6 @@ p{
     display: grid;
     grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
     grid-template-rows: auto;
-    align-items: center;
 }
 
 .web-fir-img{
