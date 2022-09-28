@@ -129,7 +129,7 @@ p{
 
 .fir-grid, .sec-grid, .third-grid{
     display: grid;
-    grid-template-columns: 1em, 1em, 1em, 1em, 1em;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
     grid-template-rows: auto;
     align-items: center;
 }
