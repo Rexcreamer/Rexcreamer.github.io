@@ -131,7 +131,6 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    background-color: grey;
 }
 
 .web-fir-img{
