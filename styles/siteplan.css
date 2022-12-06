@@ -6,20 +6,19 @@
     background-color: #052F5F;
     gap: 25px;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 5px 5px 5px lightblue;
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .para-lu {
-    color: rgb(2, 198, 2);
+    color: #A0CA92;
     text-align: center;
     font-size: 20px;
 }
 
 .para-copy {
-    color: white;
+    color: #FFFFFF;
     font-size: 30px;
 }
 
