@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+
 .copy-footer {
     display: flex;
     flex-direction: row;
@@ -8,7 +12,6 @@
     border-radius: 15px 15px 15px 15px;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .para-lu {
@@ -25,7 +28,7 @@
 .header-css {
     display: flex;
     background-color: #052F5F;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 5px 5px 5px lightblue;
     padding-top: 20px;
@@ -68,4 +71,67 @@ main {
 
 h1 {
     color:#A0CA92;
+    font-family: 'Zen Dots', cursive;
+}
+
+p {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+h3 {
+    font-family: 'Zen Dots', cursive;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 275px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 10px solid white;
+    width: 100%;
+}
+
+.zen {
+    font-family: 'Zen Dots', cursive;
+    font-size: 40px;
+}
+
+.kdam {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 40px;
+}
+
+.josefin {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+}
+
+td {
+    font-size: 20px;
+}
+
+.color1 {
+    background-color: #D8F793;
+}
+
+.color2 {
+    background-color: #A0CA92;
+}
+
+.color3 {
+    background-color: #75B09C;
+}
+
+.color4 {
+    background-color: #052F5F;
+    color: #FFFFFF;
+}   
+
+.color5 {
+    background-color: #FFFFFF;
 }
