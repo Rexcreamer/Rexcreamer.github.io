@@ -1,9 +1,8 @@
 function weatherBalloon( cityID ) {
     var key = '7085b59d4a786d720061217efd0eaa85';
-    fetch("https://api.openweathermap.org/data/2.5/weather?q=Carlsbad,CA&appid=7085b59d4a786d720061217efd0eaa85")  
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=Carlsbad,CA,US&appid=7085b59d4a786d720061217efd0eaa85")  
     .then(function(resp) { return resp.json() })
     .then(function(data) {
-        console.log(data);
         drawWeather(data);
     })
     .catch(function() {
@@ -20,7 +19,7 @@ function drawWeather( d ) {
 	var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32); 
 	
 	document.getElementById('description').innerHTML = d.weather[0].description;
-	document.getElementById('temp').innerHTML = celcius + '&deg;';
+	document.getElementById('temp').innerHTML = fahrenheit + '&deg;F';
 	document.getElementById('location').innerHTML = d.name;
 
     if( description.indexOf('rain') > 0 ) {
