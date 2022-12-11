@@ -1,4 +1,6 @@
-  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Fugaz+One&family=Pacifico&display=swap');
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 700px) {
     .sidebar {
       width: 100%;

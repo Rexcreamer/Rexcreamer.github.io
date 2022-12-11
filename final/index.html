@@ -12,16 +12,23 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Fugaz+One&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://api.openweathermap.org/data/2.5/weather?q=Carlsbad,CA&appid=7085b59d4a786d720061217efd0eaa85">
     </head>
 <body>
     <header>
         <div class="sidebar">
-            <img src="imgs/Bountiful-Goods-1.jpg" loading="lazy" alt="Logo of Bountiful Goods" width="100" height="100">
+            <img src="imgs/Bountiful-Goods-1.jpg" loading="lazy" alt="Logo of Bountiful Goods" width="200" height="200">
             <a class="active" href="index.html">Home</a>
             <a href="">Fresh Goods</a>
             <a href="">Contact</a>
             <a href="">About Us</a>
             <a href="">Resource/Attribution</a>
+            <div id="weather" class="weather-style">
+                <div id="description"></div>
+                <h1 id="temp"></h1>
+                <div id="location"></div>
+            </div>
         </div>
     </header>
     <div class="content">
@@ -36,5 +43,6 @@
         </div>
     </div>
     <script src="scripts/indexScript.js"></script>
+    <script src="scripts/weatherApi.js"></script>
 </body>
 </html>
