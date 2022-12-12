@@ -177,3 +177,38 @@ p{
     grid-column: 2/4;
     grid-row: 2/3;
 }
+
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 600px) {
+	main {
+		grid-template-columns: 1fr 2fr 1fr;
+	}
+
+	main section:nth-child(2) {
+		display: block;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main section picture {
+		display: block;
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 960px) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	main section:nth-child(3) {
+		grid-column: span 1;
+	}
+}

@@ -22,7 +22,6 @@
             <a href="fresh.html">Fresh Goods</a>
             <a href="contact.html">Contact</a>
             <a href="about.html">About Us</a>
-            <a href="">Resource/Attribution</a>
             <div id="weather" class="weather-style">
                 <div id="description"></div>
                 <h1 id="temp"></h1>
@@ -32,7 +31,98 @@
     </header>
     <div class="content">
         <main>
-
+            <div class="fresh-flex">
+                <form id="mix-form" class="mix-order-form" onsubmit="return false">
+                    <h2 class="mix-title">Drink Designer</h2>
+                    <hr>    
+                    <fieldset>
+                        <label class="top">Name* <input type="text" id="user-name" name="user-name" placeholder="Name" required ></label>
+                        <label class="top">Email*
+                            <input type="email" id="email" name="email" placeholder="example@yahoo.com" required ></label>
+                        <label class="top">Cell phone number*
+                            <input type="tel" id = "cell-phone" name="cell-phone" placeholder="8018473482" required ></label>
+                    
+                        <label class="top">Select a fruit*
+                            <select name="Fruit-1" id="fruit-1" required>
+                                <option value="">--choose a fruit--</option>
+                            </select>
+                        </label>
+                        <label class="top">Select a fruit
+                            <select name="Fruit-2" id="fruit-2">
+                                <option value="">--choose a fruit--</option>
+                            </select>
+                        </label>
+                        <label class="top">Select a fruit
+                            <select name="Fruit-3" id="fruit-3">
+                                <option value="">--choose a fruit--</option>
+                            </select>
+                        </label>
+                        <label class="top">Special Instructions
+                            <textarea name="special-instructions" id = "special-instructions" placeholder="Text goes here." rows="3" cols="23"></textarea>
+                        </label>
+                        <button id="mix-info-button" type="submit" class="submit-btn">Get Drink Info</button>
+                        <button id="mix-form-reset" type="reset" class="submit-btn reset-btn">Clear Form</button>
+                        <!--<button id="mix-drinks-reset" type="reset" class="submit-btn reset-btn">Clear Your Drinks</button>-->
+                    </fieldset>
+                    <input type="text" id="drink-date" name="drink-date" hidden >
+                </form>
+                <div class="mix-list-outer-center">
+                    <h2>Your Drinks:</h2>
+                    <hr>
+                    <div id="mix-list-inner-div" class="scrollable">
+                        <table class="mix-list" id="mix-list-table" >
+                        </table>
+                    </div>
+                </div>
+                <div class="mix-nutrition-outer" >
+                    <h2>Drink Nutrition:</h2>
+                    <hr>
+                    <table class="mix-nutrition-table-center" id="mix-nutrition-table">
+                        <tr class="table-flex">
+                            <td><h3>Date:</h3></td>
+                            <td id="date-cell"><p></p></td>
+                            <td><h3>Name:</h3></td>
+                            <td id="username-cell"><p></p></td>
+                            <td><h3>Email:</h3></td>
+                            <td id="user-email-cell"></td>
+                            <td><h3>Phone:</h3></td>
+                            <td id="user-phone-cell"></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Fruits:</h3></td>
+                            <td id="fruit-names-cell"></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Carbs:</h3></td>
+                            <td id="carbs-cell"></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Protein:</h3></td>
+                            <td id="protein-cell"></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Fat:</h3></td>
+                            <td id="fat-cell"></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Sugar:</h3></td>
+                            <td id="sugar-cell"></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Calories:</h3></td>
+                            <td id="calories-cell"></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Grams:</h3></td>
+                            <td id="grams-cell"></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Instructions:</h3></td>
+                            <td id="special-instructions-cell"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </main>
         <div>
             <footer class="copy-footer">
@@ -43,5 +133,6 @@
     </div>
     <script src="scripts/indexScript.js"></script>
     <script src="scripts/weatherApi.js"></script>
+    <script src="scripts/fruitMix.js"></script>
 </body>
 </html>
