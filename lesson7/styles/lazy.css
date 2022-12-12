@@ -1,0 +1,15 @@
+picture img{
+    display: block;
+    box-shadow: 15px;
+    filter: blur(0.0em);
+    transition: filter 3s;
+    margin: 5px;
+}
+
+.discover:hover {
+    filter: blur(0.1em);
+}
+
+picture img[data-src]{
+    filter:blur(0.1em);
+}

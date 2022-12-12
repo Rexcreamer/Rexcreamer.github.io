@@ -37,25 +37,27 @@ div.content {
 }
 
 .copy-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: #052F5F;
     gap: 25px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 .para-lu {
     color: #A0CA92;
     text-align: center;
     font-size: 11px;
+    vertical-align: bottom;
+
 }
 
 .para-copy {
     color: #FFFFFF;
     font-size: 11px;
+    vertical-align: bottom;
+    text-align: center;
 }
 
 /* font-family: 'Caveat', cursive;
@@ -121,10 +123,4 @@ font-family: 'Pacifico', cursive; */
 
 .mix-title {
     font-size: 50px;
-}
-
-.table-flex {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
 }
