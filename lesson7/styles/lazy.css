@@ -13,3 +13,8 @@ picture img{
 picture img[data-src]{
     filter:blur(0.1em);
 }
+
+.grid img{
+    display: grid;
+    grid-template: 1fr;
+}
