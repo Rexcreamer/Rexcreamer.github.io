@@ -11,7 +11,7 @@ function weatherBalloon( cityID ) {
   }
   window.onload = function() {
     weatherBalloon( 6167865 );
-}
+};
 
 function drawWeather( d ) {
 	var celcius = Math.round(parseFloat(d.main.temp)-273.15);
@@ -26,4 +26,4 @@ function drawWeather( d ) {
     } else if( description.indexOf('sunny') > 0 ) {
         document.body.className = 'sunny';
     }
-}
+};
