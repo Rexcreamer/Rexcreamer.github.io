@@ -146,7 +146,7 @@ font-family: 'Pacifico', cursive; */
 }
 
 iframe {
-    width: 1286px;
+    width: fit-content;
 }
 
 .home-grid {

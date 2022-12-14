@@ -13,10 +13,6 @@
     display: block;
   }
 
-  iframe {
-    width: 200px;
-  }
-
   .img-grid img{
     width: 300px;
     height: 200px;
