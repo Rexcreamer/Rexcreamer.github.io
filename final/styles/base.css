@@ -5,6 +5,8 @@
   .sidebar a {
     text-align: center;
     float: left;
+    display: flex;
+    flex-direction: column;
   }
 
   body {
