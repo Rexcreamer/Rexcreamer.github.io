@@ -1,11 +1,19 @@
-const inp = document.getElementById('favchap');
-const but = document.getElementById('button');
-const lis = document.getElementById('listcontainer');
-const lis2 = document.getElementById('list');
+const myInput = document.getElementById("favchap");
+    const myList = document.querySelector(".list");
+    const myButton = document.querySelector("main div button");
 
-button.addEventListener('click', function() {
-   const li = document.createElement('li');
-   li.innerHTML = inp;
-   lis2.appendChild(li);
-}
-);
+    myButton.addEventListener("click", () => {
+        if (myInput.value==""){
+            return;
+        }
+        const newItem = document.createElement("li");
+        const newButton = document.createElement("button");
+        newItem.textContent = myInput.value;
+        newButton.textContent = "❌";
+        newItem.append(newButton);
+        myList.append(newItem);
+        newButton.addEventListener("click", () => {
+            newItem.remove();
+        });
+        myInput.value="";  
+    });
