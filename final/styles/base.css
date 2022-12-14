@@ -4,7 +4,7 @@
 @media screen and (max-width: 320px) {
   .sidebar a {
     text-align: center;
-    float: none;
+    float: left;
   }
 
   body {
