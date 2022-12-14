@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Fugaz+One&family=Pacifico&display=swap');
   
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .sidebar {
     text-align: center;
     float: none;
@@ -22,9 +22,11 @@
     width: fit-content;
   }
 
-  .mix-order-form {
+  .mix-order-form fieldset label{
     text-align: left;
     font-size: 10px;
+    justify-content: left;
+    align-items: left;
   }
 
   .weather-style {

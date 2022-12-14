@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Fugaz+One&family=Pacifico&display=swap');
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .sidebar {
     width: 100%;
     height: auto;
     position: relative;
     display: block;
   }
-  
+
   div.content {margin-left: 0;}
 
   body {
@@ -24,7 +24,15 @@
     height: 200px;
   }
 
-  .mix-order-form {
+  .mix-order-form fieldset label{
     text-align: left;
+    font-size: 10px;
+    justify-content: left;
+    align-items: left;
+  }
+
+  .weather-style {
+    width: 200px;
+    height: 200px;
   }
 }
