@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home | Gamer Nation | WDD 230</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/normalize.css" >
+        <script src="scripts/indexScript.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Zen+Dots&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="header-css">
+        <header>
+            <nav>
+                <ul>
+                    <img src="imgs/0fba3b89-d0f2-4b93-9dbd-3af11d3b5e0a_GAMER NATION Logo.png" loading="lazy" alt="Picture of Logo." width="200" height="80">
+                    <!--<li><a href= portalpage.html>Portal Page</a></li>-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discovery</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="color-scheme.html">Contact</a></li>
+                    <a href="https://www.instagram.com/"><img src="imgs/instagram_icon.png" loading="lazy" alt="Instagram Link" width="25" height="25"></a>
+                    <a href="https://twitter.com/"><img src="imgs/Twitter_colored.webp" loading="lazy" alt="Twitter Link" width="25" height="25"></a>
+                    <p class="header-lu"><var id="datetod"></var></p>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <section class="formsec">
+            <div class="formdiv1">
+                <form action="thankyou.html" method="GET">
+                    <label class="myinput">First Name*<input type="text" name="fname" placeholder="John" required></label>
+                    <label class="myinput">Last Name*<input type="text" name="lname" placeholder="Doe" required></label>
+                    <label class="myinput">Title<input type="text" name="title" pattern="[A-Za-z -]{7,}"></label>
+                    <label class="myinput">Email*<input type="email" name="email" required></label>
+                    <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required></label>
+                    <label class="myinput">Business Name*<input type="text" name="bizname" required></label>
+                    <h3>Membership Level</h3>
+                    <label class="myradio"><input type="radio" name="level" value="nonprofit">Non-Profit</label>
+                    <label class="myradio"><input type="radio" name="level" value="bronze">Bronze</label>
+                    <label class="myradio"><input type="radio" name="level" value="silver">Silver</label>
+                    <label class="myradio"><input type="radio" name="level" value="gold">Gold</label>
+                    <label>Business Description</label>
+                    <textarea name="description" cols="20" rows="5"></textarea>
+                    <label><input id="currentdate" type="hidden" name="currentdate" value=""></label>
+                    <input class="mysubmit" type="submit" value="Join the Chamber!">
+                </form>
+            </div>
+            <div class="formdiv2">
+                <h3>Membership Level Benefits:</h3>
+                <h3>NP Membership</h3>
+                    <ul>
+                        <li>For non profit organizations and there is no fee</li>
+                    </ul>
+                <h3>Bronze Membership</h3>
+                    <ul>
+                        <li>15% discount on tourney entry fees</li>
+                        <li>Have a bronze medal next to your name in the discord.</li>
+                        <li>Have access in participating in small tourneys.</li>
+                        <li>Create a team of 10 people to use for different games. (Up to 5 members could join in the same tourney)</li>
+                        <li>Fee of $5/month</li>
+                    </ul>
+                <h3>Silver Membership</h3>
+                    <ul>
+                        <li>25% discount on tourney entry fees</li>
+                        <li>You can start 1 small tourney every 3 months</li>
+                        <li>Have access to 1 dedicated trainer.</li>
+                        <li>Have access in participating in small tourneys.</li>
+                        <li>Have a silver medal next to your name in the discord.</li>
+                        <li>Create a team of 25 people to use for different games. (Up to 5 members could join in the same tourney)</li>
+                        <li>Fee of $10/month</li>
+                    </ul>
+                <h3>Gold Membership</h3>
+                    <ul>
+                        <li>50% discount on tourney entry fees</li>
+                        <li>You can start small tourneys.</li>
+                        <li>Have a gold medal next to your name in the discord.</li>
+                        <li>Have access in participating in small tourneys.</li>
+                        <li>Create a team of 50 people to use for different games. (Up to 5 members could join in the same tourney)</li>
+                        <li>Have access to dedicated trainers.</li>
+                        <li>Fee of $15/month</li>
+                    </ul>
+            </div>
+        </section>
+    </main>
+    <div>
+        <footer class="copy-footer">
+            <img src="imgs/0fba3b89-d0f2-4b93-9dbd-3af11d3b5e0a_GAMER NATION Logo.png" loading="lazy" alt="Picture of Logo." width="200" height="80">
+            <div class="copy-info">
+                <p>3274 Willow Ln. Casa Grande, AZ</p>
+                <p>info@gamernation.org</p>
+                <p>(801)547-3124</p>
+            </div>
+            <div class="copy-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214427.17252373003!2d-111.90128794196212!3d32.88694116531664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872a567f774a2d69%3A0x60c32efe69f161a7!2sCasa%20Grande%2C%20AZ!5e0!3m2!1sen!2sus!4v1671055358082!5m2!1sen!2sus" 
+                    width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="para-copy">&copy; <var id="yearnow2"></var> .:|:. Alexander J. Webb .:|:. Arizona</p>
+            <p class="para-lu">Last Updated: <var id="datetod2"></var></p>
+        </footer>
+    </div>
+</body>
+</html>
