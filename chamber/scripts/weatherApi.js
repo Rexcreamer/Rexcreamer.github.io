@@ -1,4 +1,4 @@
-const apiURL = `https://api.openweathermap.org/data/2.5/weather?Tucon,AZ,US&appid=7085b59d4a786d720061217efd0eaa85"&units=imperial`;
+const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=CasaGrande,AZ,US&appid=7085b59d4a786d720061217efd0eaa85`;
 function showWeather(obj){
     let currenttemp = document.querySelector('#current-temp');
     let iconpath = document.querySelector('#icon-src');
@@ -10,6 +10,7 @@ function showWeather(obj){
     weathericon.setAttribute("src", iconURL);
     weathericon.setAttribute("alt", obj.weather[0].description);
     figurecaption.textContent = obj.weather[0].main;
+    setwindchill(temp, windspeed)
 }
 fetch(apiURL)
   .then((response) => response.json())
@@ -18,24 +19,21 @@ fetch(apiURL)
     showWeather(jsObject);
   });
 
-  // Populate the DOM stuff
-  tempobj.textContent = temp;
-  windspeedobj.textContent = windspeed;
-  windchillobj.innerHTML = windchillmsg;
-
-  function setwindchill(temp, windspeed){
+function setwindchill(temp, windspeed){
     // References to DOM elements
     let tempobj = document.querySelector("#current-temp");
     let windspeedobj = document.querySelector("#windspeed");
     let windchillobj = document.querySelector("#windchill");
     
-    // Calculate windspeed if necessary
-    let windchillmsg = "N/A";
-    
     if (temp <= 50 && windspeed > 3){
         let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
         windchillmsg = `${chill}&deg;`;
     }
+
+    var fahrenheit = Math.round(((parseFloat(temp.main.temp)-273.15)*1.8)+32)
+
+    tempobj.innerHTML = fahrenheit
+    windchillobj.innerHTML = chill
   
     setwindchill(39, 10);
         if (weatherId >= 200 && weatherId < 531){ 
@@ -58,3 +56,5 @@ fetch(apiURL)
         {
             document.querySelector('#weathericon').setAttribute('src', iconsrc);
         }};
+
+        
