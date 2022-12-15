@@ -9,9 +9,9 @@
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/normalize.css" >
         <script src="scripts/indexScript.js" defer></script>
-        <!--<script src="scripts/chamber.js" defer></script>
+        <!--<script src="scripts/chamber.js" defer></script>-->
         <script src="scripts/windchill.js" defer></script>
-        <script src="scripts/weatherApi.js" defer></script>-->
+        <script src="scripts/weatherApi.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Zen+Dots&display=swap" rel="stylesheet">
@@ -53,11 +53,15 @@
                 <p>We also have a local Mario Kart Tourney going on right now!</p>
             </div>
             <div class="box3">
-                <div class="container">
-                    <div class="icon">---</div>
-                    <div class="temp">-°C</div>
-                    <div class="summary">----</div>
-                    <div class="location"></div>
+                <div class="weather">
+                    <div class="weatherformat">
+                        <h3 class="title">Weather</h3>
+                        <img class="weatherimg" src="imgs/sunny.png" alt="Weather Icon">
+                        <h3 class="wtitle">Partly Cloudy</h3>
+                        <p class="wtemp"><span id="current-temp"></span>&deg;F</p>
+                        <p class="wspeed">Wind Speed: <span id="windspeed"></span>4 mph</p>
+                        <p class="wchill">Wind Chill: <span id="wind-chill"></span>N/A</p>
+                    </div>
                 </div>
             </div>
             <div class="box4">
