@@ -128,6 +128,7 @@ h3 {
     grid-row: 3/4;
     grid-column: 1/2;
     background-color: #F9E7E7;
+    text-align: center;
 }
 
 .box5 {
@@ -229,4 +230,12 @@ tfoot {
         display: flex;
         flex-direction: column;
     }
+}
+
+.spot1{
+    text-align: center;
+}
+
+.spot2 {
+    text-align: center;
 }

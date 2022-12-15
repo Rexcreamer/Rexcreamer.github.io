@@ -160,15 +160,19 @@
 
     .spot1 {
         border: 1px solid black;
+        font-size: 20px;
     }
 
     .spot2 {
         border: 1px solid black;
+        font-size: 20px;
     }
 
     .spot3 {
         border: 1px solid black;
         display: block;
+        text-align: center;
+        font-size: 20px;
     }
 
     .stats {
