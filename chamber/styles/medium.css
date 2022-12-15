@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+
+@media only screen and (min-width: 600px) and (max-width:1280px) {
+    .spot3 {
+        display: none;
+    }
+
+    .copy-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #052F5F;
+        gap: 25px;
+        border-radius: 15px 15px 15px 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .copy-footer img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .para-lu {
+        color: #A0CA92;
+        text-align: center;
+        font-size: 10px;
+    }
+    
+    .para-copy {
+        color: #FFFFFF;
+        font-size: 10px;
+    }
+    
+    .copy-info {
+        color: #FFFFFF;
+    }
+    
+    .header-css {
+        display: flex;
+        flex-direction: column;
+        background-color: #052F5F;
+        font-family: 'Josefin Sans', sans-serif;
+        border-radius: 15px 15px 15px 15px;
+        box-shadow: 5px 5px 5px lightblue;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        min-height: 2em;
+    }
+    
+    .header-lu {
+        text-align: center;
+        background-color: #063872;
+        color: #FFFFFF;
+    }
+    
+    nav ul li {
+        list-style-type: none;
+    }
+    
+    nav {
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    li {
+        display: inline-block;
+        padding: 20px;
+    }
+    
+    a:hover {
+        color: #75B09C;
+    }
+    
+    a:active {
+        color: #D8F793;
+    }
+    
+    h1 {
+        color:#A0CA92;
+        font-family: 'Zen Dots', cursive;
+    }
+    
+    p {
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    
+    h3 {
+        font-family: 'Zen Dots', cursive;
+    }
+
+    .stats {
+        top: 20px;
+        right: 25px;
+        width: 100px;
+        height: 60px;
+    }
+
+    .box2 img {
+        height: 400px;
+    }
+}
